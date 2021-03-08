@@ -1,3 +1,8 @@
+
+Comando Console Nuget
+Install-Package twitter.bootstrap;
+
+
 CREATE TABLE [dbo].[Pessoa]
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
