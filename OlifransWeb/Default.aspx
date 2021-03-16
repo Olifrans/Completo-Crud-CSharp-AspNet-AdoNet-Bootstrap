@@ -15,7 +15,7 @@
         <div class="jumbotron">
             <h1>Controle de Clientes</h1>
 
-            Selecione a Operação Desejada
+            Selecione a oOperação desejada
             <asp:DropDownList ID="ddlMenu" runat="server">
                 <asp:ListItem Value="0" Text="- Selecione uma opção -" />
                 <asp:ListItem Value="1" Text="Cadastrar Cliente" />
@@ -23,8 +23,8 @@
                 <asp:ListItem Value="3" Text="Obter os Dados do Cliente" />
             </asp:DropDownList>
 
-            <asp:Button ID="btnMenu" runat="server" Text="Acessar" CssClass="btn btn-primary" />
-
+           <%-- <asp:Button ID="btnMenu" runat="server" Text="Acessar" CssClass="btn btn-primary btn-lg" OnClick="btnConsultarCliente" />--%>
+      <asp:Label ID="lblMensagen"  runat="server"/>
         </div>
     </form>
 </body>

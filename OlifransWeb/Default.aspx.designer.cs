@@ -33,12 +33,12 @@ namespace OlifransWeb
         protected global::System.Web.UI.WebControls.DropDownList ddlMenu;
 
         /// <summary>
-        /// btnMenu control.
+        /// lblMensagen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnMenu;
+        protected global::System.Web.UI.WebControls.Label lblMensagen;
     }
 }
