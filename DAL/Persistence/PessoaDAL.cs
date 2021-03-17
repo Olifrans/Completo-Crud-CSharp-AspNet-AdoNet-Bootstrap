@@ -15,7 +15,7 @@ namespace DAL.Persistence
             {
                 //Abrir Conexão
                 AbrirConexao();
-                Cmd = new SqlCommand("insert into Pessoa(Nome, Endereco, Email) values(@v1. @v2, @v3)", Con);
+                Cmd = new SqlCommand("insert into Pessoa(Nome, Endereco, Email) values(@v1, @v2, @v3)", Con);
 
                 Cmd.Parameters.AddWithValue("@v1",p.Nome);
                 Cmd.Parameters.AddWithValue("@v2",p.Endereco);

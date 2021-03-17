@@ -5,11 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Home</title>
-    <link type="text/css" rel="stylesheet" href="Content/bootstrap.css" />
-</head>
-    <script>src = "Scripts/jquery-3.0.0.min.js"</script>
-    <script>src = "Scripts/bootstrap.min.js"</script>
 
+  <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+    
+<script src="Scripts/bootstrap.min.js"></script>
+<script src="Scripts/jquery-3.0.0.min.js"></script>
 <body>
     <form id="form1" runat="server">
         <div class="jumbotron">
@@ -23,8 +24,9 @@
                 <asp:ListItem Value="3" Text="Obter os Dados do Cliente" />
             </asp:DropDownList>
 
-           <%-- <asp:Button ID="btnMenu" runat="server" Text="Acessar" CssClass="btn btn-primary btn-lg" OnClick="btnConsultarCliente" />--%>
-      <asp:Label ID="lblMensagen"  runat="server"/>
+            <asp:Button ID="btnMenu" runat="server" Text="Acessar" CssClass="btn btn-primary btn-lg"  OnClick="BtnAcessar" />
+            <p><asp:Label ID="lblMensagen"  runat="server"/></p>
+            
         </div>
     </form>
 </body>

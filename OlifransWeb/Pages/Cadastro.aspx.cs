@@ -4,6 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using DAL.Model;
+using DAL.Persistence;
+
 
 namespace OlifransWeb.Pages
 {
@@ -12,6 +15,28 @@ namespace OlifransWeb.Pages
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void BtnCadastrarCliente(object sender, EventArgs e)
+        {
+            try
+            {
+                Pessoa p = new Pessoa();
+
+                p.Nome     = txtNome.Text;
+                p.Endereco = txtEndereco.Text;
+                p.Email    = txtEmail.Text;
+
+                PessoaDAL d = new PessoaDAL();
+                d.Gravar(p); //Gravando dados da pessoa
+
+                lblMensagen.Text ="Cliente"+p.Nome+ "Cadastrado com sucesso!!!";
+
+            }
+            catch (Exception ex)
+            {
+                lblMensagen.Text = ex.Message;
+            }
         }
     }
 }
