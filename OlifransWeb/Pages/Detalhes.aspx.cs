@@ -60,7 +60,7 @@ namespace OlifransWeb.Pages
                 PessoaDAL d = new PessoaDAL();
 
                 d.Excluir(Id);
-                lblMensagen.Text = "Cliente excluido com sucesso!";
+                lblMensagen.Text = "Cliente" + p.Nome + "excluido com sucesso!";
 
                 //Limpa ampo de dados após exclusão
                 txtNomeCiente.Text  = string.Empty;
@@ -95,7 +95,7 @@ namespace OlifransWeb.Pages
                 PessoaDAL d = new PessoaDAL();
                 d.Atualizar(p);
 
-                lblMensagen.Text = "Cliente atualizado com sucesso!";
+                lblMensagen.Text = "Cliente" + p.Nome + "atualizado com sucesso!";
 
                 //Limpa ampo de dados após exclusão
                 txtCodigo.Text      = string.Empty;
