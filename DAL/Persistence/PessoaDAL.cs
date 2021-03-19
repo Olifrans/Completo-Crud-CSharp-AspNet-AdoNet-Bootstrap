@@ -95,10 +95,12 @@ namespace DAL.Persistence
                 //Abrir Conexão
                 AbrirConexao();
                 Cmd = new SqlCommand("select * from Pessoa where Id=@v1", Con);
-
                 Cmd.Parameters.AddWithValue("@v1", Id);
+                Dr = Cmd.ExecuteReader(); // Execução de leitura das informações no BD
+                               
 
                 Pessoa p = null;  //Criando um espaço de memória: Ponteiro:
+
                 if (Dr.Read())
                 {
                     p = new Pessoa();

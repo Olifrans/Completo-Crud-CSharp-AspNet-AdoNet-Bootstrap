@@ -40,7 +40,7 @@ namespace OlifransWeb
                     break;
 
                 case V3:
-                    Response.Redirect("/Account/Detalhes.aspx");
+                    Response.Redirect("/Pages/Detalhes.aspx");
                     break;
             }
         }

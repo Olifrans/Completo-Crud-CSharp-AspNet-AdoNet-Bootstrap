@@ -16,7 +16,7 @@
         <div class="jumbotron">
             <h1>Controle de Clientes</h1>
 
-            Selecione a oOperação desejada
+            Selecione a Operação desejada
             <asp:DropDownList ID="ddlMenu" runat="server">
                 <asp:ListItem Value="0" Text="- Selecione uma opção -" />
                 <asp:ListItem Value="1" Text="Cadastrar Cliente" />

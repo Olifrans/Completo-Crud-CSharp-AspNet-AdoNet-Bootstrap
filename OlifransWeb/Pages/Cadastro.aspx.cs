@@ -32,10 +32,17 @@ namespace OlifransWeb.Pages
 
                 lblMensagen.Text = "Cliente" + p.Nome + "cadastrado com sucesso!!!";
 
-                //Limpar conteúdo dos campos após gravar dados no BD.
-                txtNome.Text = "";
-                txtEndereco.Text = "";
-                txtEmail.Text = "";
+                //Limpar conteúdo dos campos após gravar dados no BD - Duas formas.
+                //Primeira forma
+
+                //txtNome.Text = "";
+                //txtEndereco.Text = "";
+                //txtEmail.Text = "";
+
+                //Segunda forma
+                txtNome.Text = string.Empty;
+                txtEndereco.Text = string.Empty;
+                txtEmail.Text = string.Empty;
 
             }
             catch (Exception ex)

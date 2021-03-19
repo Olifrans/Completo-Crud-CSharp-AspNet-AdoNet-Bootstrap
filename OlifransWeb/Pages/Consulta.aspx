@@ -4,9 +4,11 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>Cnsultar Cliente</title>
+    <title>Consultar Cliente</title>
 
-     <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link type="text/css" href="Content/bootstrap.css" rel="stylesheet" />
+
+    <%-- <link href="Content/bootstrap.css" rel="stylesheet" />--%>
 </head>
     
 <script src="Scripts/bootstrap.min.js"></script>
