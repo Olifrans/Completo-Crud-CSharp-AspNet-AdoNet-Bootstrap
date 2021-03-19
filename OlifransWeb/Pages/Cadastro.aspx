@@ -17,11 +17,11 @@
                 <h3 class="well"> Cadastro de Cliente </h3>
                 <br />
                 Nome do Cliente: <br />
-                <asp:TextBox ID="txtNome" runat="server" placeholder="Nome Completo" width="45%" CssClass="form-coontrol" />
+                <asp:TextBox ID="txtNome" runat="server" placeholder="Nome Completo" width="50%" CssClass="form-coontrol" />
                 <br /><br />
 
                  Endereço do Cliente: <br />
-                <asp:TextBox ID="txtEndereco" runat="server" placeholder="Endereço do Cliente" width="70%" CssClass="form-coontrol" />
+                <asp:TextBox ID="txtEndereco" runat="server" placeholder="Endereço do Cliente" width="50%" CssClass="form-coontrol" />
                 <br /><br />
 
                   Email do Cliente: <br />

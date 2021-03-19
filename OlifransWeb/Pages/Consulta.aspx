@@ -6,19 +6,27 @@
 <head runat="server">
     <title>Cnsultar Cliente</title>
 
-    <link href="Pages/Content/bootstrap.css" rel="stylesheet" />
-    <link href="Pages/Content/bootstrap.min.css" rel="stylesheet" />
+     <link href="Content/bootstrap.css" rel="stylesheet" />
 </head>
-    <script src="../Pages/Scripts/jquery-3.0.0.min.js"></script>
-    <script src="../Pages/Scripts/bootstrap.min.js"></script>
+    
+<script src="Scripts/bootstrap.min.js"></script>
+<script src="Scripts/jquery-3.0.0.min.js"></script>
 
 <body>
     <form id="form1" runat="server">
         <div class="container">
             <div class="row">
-                <h3 class="well"> Cnsultar Clientes </h3>
-                <br />
+                <h3 class="well"> Consultar Clientes </h3>
 
+                <asp:GridView ID="gridClientes" runat="server" CssClass="table table-hover table-striped" GridLines="None" AutoGenerateColumns="false" BackColor="#ccffcc">
+                    <Columns>
+                        <asp:BoundField DataField="Id" HeaderText="Código" />
+                        <asp:BoundField DataField="Nome" HeaderText="Nome" />
+                        <asp:BoundField DataField="Endereco" HeaderText="Endereço" />
+                        <asp:BoundField DataField="Email" HeaderText="E-Mail" />
+                    </Columns>
+                     <RowStyle CssClass="cursor-Pointer" />                   
+                </asp:GridView>
 
 
                 <p> <asp:Label ID="lblMensagen"  runat="server"/> </p>

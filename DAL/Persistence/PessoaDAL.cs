@@ -163,4 +163,4 @@ namespace DAL.Persistence
     }
 }
 
-//Regras de negócio da aplicação - consultas (selct, update, insert e delete - om metodo obter por ID)
+//Regras de negócio da aplicação - consultas (select, update, insert e delete - om metodo obter por ID)

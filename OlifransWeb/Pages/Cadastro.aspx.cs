@@ -30,7 +30,12 @@ namespace OlifransWeb.Pages
                 PessoaDAL d = new PessoaDAL();
                 d.Gravar(p); //Gravando dados da pessoa
 
-                lblMensagen.Text ="Cliente"+p.Nome+ "Cadastrado com sucesso!!!";
+                lblMensagen.Text = "Cliente" + p.Nome + "cadastrado com sucesso!!!";
+
+                //Limpar conteúdo dos campos após gravar dados no BD.
+                txtNome.Text = "";
+                txtEndereco.Text = "";
+                txtEmail.Text = "";
 
             }
             catch (Exception ex)
