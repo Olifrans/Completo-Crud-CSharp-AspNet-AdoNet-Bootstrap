@@ -36,7 +36,7 @@
 
                  <asp:Button ID="btnCadastrar" runat="server" Text="Cadastrar" CssClass="btn btn-success btn-lg" OnClick="BtnCadastrarCliente" />
 
-                <a href="/Default.aspx" class="btn btn-default btn-lg"> Voltar</a>
+                <a href="/Default.aspx" class="btn btn-default btn-lg"> Voltar a Home</a>
 
             </div>  
         </div>
